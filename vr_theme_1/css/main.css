@@ -1,12 +1,9 @@
 /* Import All css here */
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap";
 @import "bootstrap.min.css";
-/* @import "style.css"; */
+@import "style.css";
 @import "dev-style.css";
-@import "index.css";
+
 
 /* Body Hidden till Load the page */
-/* body:not(.page-loaded) { opacity: 1; overflow: hidden;} */
- /* Body Hidden till Load the page  */
- /* body:not(.page-loaded) { opacity: 1; overflow: hidden;}  */
-body:not(.page-loaded) { opacity: 1; overflow: auto;}
+body:not(.page-loaded) { opacity: 0; overflow: hidden;}
