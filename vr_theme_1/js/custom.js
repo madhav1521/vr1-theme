@@ -49,6 +49,8 @@ $(document).ready(function() {
 	});	
 
 	// Add new js functions here -----------------------------------------------------------------
+	
+	
 	$(".toggle-sidebar,.overlay").click(function(){
 		$("body").toggleClass("sidebar-open")	
 	});

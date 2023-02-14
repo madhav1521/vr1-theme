@@ -1,119 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Bitcoin Company | Analytics</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Meta descriptions may be included in search results to concisely summarize page content.">
-    <link rel="shortcut icon" href="./images/blue-coin.svg" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
-  </head>
-  <body>
 
-    <!-- Navbar Code -->
-    
-    <nav class="navbar  ">
-      <div class="nav-items d-flex align-items-center ">
-              <a class="navbar-brand d-sm-block d-none" href="#"><img src="./images/logo.svg" alt="brand-logo"></a>
-              <a class="brand navbar-brand d-block d-sm-none" href="#"><img src="./images/blue-coin.svg" alt="brand-logo"></a>
-              <button class=" toggle btn-menu toggle-sidebar "  type="button" ><img src="./images/toggle-button.svg" alt="sidebar menu" >
-              </button> 
-              
-              <form class="form-search d-flex " role="search">
-                  <input class="form-control d-sm-block d-none" id="search" type="search" placeholder="Search" aria-label="Search">
-                  <button class="search-btn d-block d-sm-none" data-bs-target="#search" aria-controls="search"><img src="./images/search.svg"> </button>
-              </form>
-              <!-- <button class="btn btn-search" type="button"><img src="images/bx_bx-search.svg"></button> -->
-      
-              <button class="btn-buy btn " type="submit">Buy Bitcoins</button>
+<head>
+  <meta charset="utf-8" />
+  <title>Bitcoin Company | Analytics</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Meta descriptions may be included in search results to concisely summarize page content.">
+  <link rel="shortcut icon" href="./images/blue-coin.svg" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
 
-              <div class="dropdown">
-                <button class=" dropdown-toggle bg-transparent bd-none border-0" type="button" data-bs-toggle="dropdown">
-                  <img src="./images/notification.svg" class="notification ">
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>        
-               
-              <div class="dropdown">
-                  <button class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="./images/profile.png" class="ic-profile">
-                      <p>Hi, John Doe</p>
-                      <img id="arrow" src="./images/downward-arrow.svg" alt="dropdown-arrow" class="ic-down">
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><a href="index.html" class="dropdown-item" type="button">Logout</a></li>
-                  </ul>
-              </div>   
+<body>
+
+  <!-- Navbar Code -->
+
+  <nav class="navbar  ">
+    <div class="nav-items d-flex align-items-center ">
+      <a class="navbar-brand d-sm-block d-none" href="#"><img src="./images/logo.svg" alt="brand-logo"></a>
+      <a class="brand navbar-brand d-block d-sm-none" href="#"><img src="./images/blue-coin.svg" alt="brand-logo"></a>
+      <button class=" toggle btn-menu toggle-sidebar " type="button"><img src="./images/toggle-button.svg"
+          alt="sidebar menu">
+      </button>
+
+      <form class="form-search d-flex " role="search">
+        <input class="form-control d-sm-block d-none" id="search" type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="search-btn d-block d-sm-none" data-bs-target="#search" aria-controls="search"><img
+            src="./images/search.svg"> </button>
+      </form>
+      <!-- <button class="btn btn-search" type="button"><img src="images/bx_bx-search.svg"></button> -->
+
+      <button class="btn-buy btn " type="submit">Buy Bitcoins</button>
+
+      <div class="dropdown">
+        <button class=" dropdown-toggle bg-transparent bd-none border-0" type="button" data-bs-toggle="dropdown">
+          <img src="./images/notification.svg" class="notification ">
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
       </div>
+
+      <div class="dropdown">
+        <button class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="./images/profile.png" class="ic-profile">
+          <p>Hi, John Doe</p>
+          <img id="arrow" src="./images/downward-arrow.svg" alt="dropdown-arrow" class="ic-down">
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">Action</button></li>
+          <li><button class="dropdown-item" type="button">Another action</button></li>
+          <li><a href="index.html" class="dropdown-item" type="button">Logout</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-    <!-- End of Navbar -->
+  <!-- End of Navbar -->
 
-    <div class="dash-container ">
+  <div class="dash-container ">
 
-        <div class="container1">
-          <div class="leftcontent ">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <div class="active-dashboard">
-                  <a class="nav-link  " aria-current="page" href="dashboard.html"><span class="icon-dashboard  "><img src="./images/icon-dashboard.svg" alt="" /></span><p>Dashboard</p></a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Analytics.html"><span><img src="./images/icon-analysis.svg" alt="" /></span><p>Analytics</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><span><img src="./images/icon-dashboard.svg" alt="" /></span><p>Resources</p></a>
-              </li>
-              <li class="nav-item">
-                    <a class="nav-link" href="#"><span><img src="./images/icon-price.svg" alt="" /></span><p>Price</p></a>
-              </li>
+    <div class="container1">
+      <div class="leftcontent ">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="dashboard.html"><span class="icon-img"><img
+                    src="./images/icon-dashboard.svg" alt="" /></span>
+                <p>Dashboard</p>
+              </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Analytics.html"><span class="icon-img"><img src="./images/icon-analysis.svg" alt="" /></span>
+              <p>Analytics</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-img"><img src="./images/icon-dashboard.svg" alt="" /></span>
+              <p>Resources</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-img"><img src="./images/icon-price.svg" alt="" /></span>
+              <p>Price</p>
+            </a>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"><span><img src="./images/icon-community.svg" alt="" /></span><p>Community</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><span><img src="./images/icon-info.svg" alt="" /></span><p>About</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><span><img src="./images/setting-icon.svg" alt="" /></span><p>Setting</p></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div class="container2 ">
-          <div class="rightcontent">
-            <div class="row">
-              <div><h2>Analytics</h2></div>
-              <div class="">
-
-              </div>
-
-
-
-              
-            </div>
-          </div>
-        </div>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-img"><img src="./images/icon-community.svg" alt="" /></span>
+              <p>Community</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-img"><img src="./images/icon-info.svg" alt="" /></span>
+              <p>About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-img"><img src="./images/setting-icon.svg" alt="" /></span>
+              <p>Setting</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
 
+    <div class="container2 ">
+      <div class="rightcontent ">
+        <div class="row">
+          <div>
+            <h2>Analytics</h2>
+          </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+
+          <!-- Start of Main-Content
+            ---------------------------------------------------------------------------------------------------------- -->
+
+          <!-- first column starts
+            ---------------------------------------------------------------------------------------------------------- -->
+          <div class="content-analysis">
+              <div class="column1">
+                <h3>One Column</h3>
+              </div>
+
+              <div class="form-floating">
+                <input type="text" class="form-control" id="form-1" placeholder="Full Name">
+                <label for="form-1">Username</label>
+              </div>
+              <div class="form-floating">
+                <select class="form-select  " name="Designation" list="designation" placeholder="Select Designation" aria-label="Default select example">
+                  <option selected >Select Designation </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="form-2">Select Designation</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="form-3" placeholder="Description">
+                <label for="form-3">Description</label>
+              </div>
+
+
+            <!-- second column starts
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column2">
+              <h3>Two Column</h3>
+            </div>
+            <div class="row mt-4">
+              <div class=" col-md-6">
+                <div class="form-floating  ">
+                  <input type="text" class="form-control text-dark" id="floatingInput" value="John Deo" placeholder="First Name">
+                  <label for="floatingInput">First Name</label>
+                </div>
+              </div>
+              <div class=" col-md-6">
+                <div class="form-floating ">
+                  <input type="text" class="form-control " id="dashed" value="@johndoe" placeholder="Username">
+                  <label for="dashed">Username</label>
+                </div>
+              </div>
+              <div class=" col-md-6">
+                <div class="form-floating mt-3 ">
+                  <input type="text" class="form-control text-dark" id="floatingPassword" value="********" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating is-invalid mt-3">
+                  <input type="text" class="form-control  is-invalid " id="redlabel" value="Designer" placeholder="Designer">
+                  <label for="redlabel " class="redlabel text-danger">Designation</label>
+                  
+                </div>
+                <div class="invalid-feedback">
+                  Please enter Valid data
+              </div>
+              </div>
+            </div>
+
+
+            <!-- third column starts
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column3">
+              <h3>Third Column</h3>
+            </div>
+            <div class="row mt-3">
+              <div class=" col-md-4">
+                <div class="form-floating ">
+                  <input type="text" class="form-control active" style="border-bottom: 1px solid #10D7FF;" id="floatingInput" value="| " placeholder="First Name">
+                  <label for="floatingInput">First Name</label>
+                </div>
+              </div>
+              <div class=" col-md-4">
+                <div class="form-floating ">
+                  <input type="text" class="form-control text-dark" id="floatingInput" value="John " placeholder="First Name">
+                  <label for="floatingInput">Last Name</label>
+                </div>
+              </div>
+              <div class=" col-md-4">
+                <div class="form-floating">
+                      <select class="form-select " name="Designation" list="designation" id="form-2" value="Designer"  >
+                        <option selected > Designer </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="form-2">Designation</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth column starts
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column4">
+              <h3>Fourth Column</h3>
+            </div>
+            <div class="row mt-3">
+              <div class=" col-md-3">
+                <div class="form-floating ">
+                  <input type="text" class="form-control text-dark  active" id="floatingInput" value="John " placeholder="First Name">
+                  <label for="floatingInput">First Name</label>
+                </div>
+              </div>
+              <div class=" col-md-3">
+                <div class="form-floating ">
+                  <input type="text" class="form-control border-bottom-dasher" id="dashed" value="@johndoe" placeholder="Username">
+                  <label for="dashed">Username</label>
+                </div>
+              </div>
+              <div class=" col-md-3">
+                <div class="form-floating ">
+                  <input type="text" class="form-control  " id="floatingPassword" value="********" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="below-password text-secondary " style="font-size:.875em ;">
+                  At least 8 Characters
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating is-invalid">
+                  <input type="text" class="form-control  is-invalid" id="redlabel" value="Designer" placeholder="Designer">
+                  <label for="floatingInput" class="redlabel text-danger">Designation</label>
+                </div>
+                <div class="invalid-feedback">
+                  Please enter Valid data
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth column starts (Other form Elements)
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column5 ">
+              <h3>Other form Elements</h3>
+              <h5>File Upload</h5>
+            </div>
+            <div class="uploadbutton d-flex align-items-center pt-3">
+              <button class=" upload d-flex form-check-inline border-0 align-items-center justify-content-center rounded-pill " style="background-color: #BFBFBF;">
+                <img src="/images/upload.svg">
+              </button>
+              <p class="nis text-secondary">no item selected</p>
+            </div>
+
+            <!-- Sixth column starts (Checkbox)
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column6 pt-4">
+              <h5>Checkbox</h5>
+            </div>
+            <!-- <div class="formcheck d-flex "> -->
+              <div class="form-check form-check-inline pt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Option1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Option2
+                </label>
+              </div>
+            <!-- </div> -->
+
+            <!-- Seventh column starts (Radiobutton)
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column7 pt-4">
+              <h5>Radio Button</h5>
+            </div>
+            <div class="form-check form-check-inline pt-3">
+              <input class="form-check-input" type="radio" value="option1" name="flexRadioDefault" id="Radio1" checked>
+              <label class="form-check-label" for="Radio1">Option 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" value="option2" id="Radio2">
+              <label class="form-check-label" for="Radio2">Option 2</label>
+            </div>
+
+            <!-- Eighth column starts (Call to action)
+            ---------------------------------------------------------------------------------------------------------- -->
+
+            <div class="column8 pt-5">
+              <h5>Call to action</h5>
+            </div>
+            <div class="pri-sec d-sm-flex pt-3 pe-2">
+              <button class="primary form-check-inline border-0 rounded-pill text-light " style="background-color: #10D7FF;">
+                <h5><a href="#">Primary</a></h5>
+              </button>
+              <button class="secondary form-check-inline rounded-pill bg-transparent border-primary text-primary "
+                style="background-color: #ffffff;">
+                <h5><a href="#">Secondary</a> </h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+          <!-- Tabbing starts
+            ---------------------------------------------------------------------------------------------------------- -->
+
+          <div class="tabbing mt-5 mb-5" style="background-color: #FFFFFF;">
+            <div class="tabbing1">
+              <h5>Tabbing</h5>
+            </div>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="tab-item" role="presentation">
+                  <button class="tab-link active " id="tab1" data-bs-toggle="tab" data-bs-target="#para1" type="button"
+                      role="tab" aria-controls="home" aria-selected="true">Tab1</button>
+              </li>
+              <li class="tab-item" role="presentation">
+                  <button class="tab-link" data-bs-toggle="tab" data-bs-target="#para2" type="button" role="tab"
+                      aria-controls="profile" aria-selected="false">Tab2</button>
+              </li>
+              <li class="tab-item" role="presentation">
+                  <button class="tab-link" data-bs-toggle="tab" data-bs-target="#para3" type="button" role="tab"
+                      aria-controls="contact" aria-selected="false">Tab3</button>
+              </li>
+          </ul>
+            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="para1"  role="tabpanel" >
+              First,  It is a long established fact that a reader will be distracted by the readable content of
+              a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+              English.It is a long established fact that a reader will be distracted by the readable content of a page
+              when looking at its layout.
+            </div>
+
+            <div class="tab-pane fade show " id="para2"  role="tabpanel" >
+              Second,  It is a long established fact that a reader will be distracted by the readable content of
+              a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+              English.It is a long established fact that a reader will be distracted by the readable content of a page
+              when looking at its layout.
+            </div>
+
+            <div class="tab-pane fade show " id="para3"  role="tabpanel" >
+              Third, It is a long established fact that a reader will be distracted by the readable content of
+              a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+              English.It is a long established fact that a reader will be distracted by the readable content of a page
+              when looking at its layout.
+            </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- End of Main-Content
+            ---------------------------------------------------------------------------------------------------------- -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
-
-
-
-
-    
