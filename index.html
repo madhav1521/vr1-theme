@@ -1,54 +1,58 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Bitcoin Company | Login</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Meta descriptions may be included in search results to concisely summarize page content.">
-	<link rel="shortcut icon" href="./images/blue-coin.svg" >
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="utf-8">
+    <title>Bitcoin Company | Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Meta descriptions may be included in search results to concisely summarize page content.">
+    <link rel="shortcut icon" href="./images/blue-coin.svg">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 
 <body>
-     
         <div class="login-container">
-            <div class="root" style="position: relative;">
-            <img src="./images/upper-coin.svg" alt="dollar coin" class="upper-coin">
-            <div class="main">
-                <div class="registration">
-                    <div class="companylogo">
-                        <img src="./images/bluecoin-company.svg" alt="companylogo">
+            <div class="root" >
+                <img src="./images/upper-coin.svg" alt="dollar coin" class="upper-coin">
+                <div class="main">
+                    <div class="registration">
+                        <div class="companylogo">
+                            <img src="./images/bluecoin-company.svg" alt="companylogo">
+                        </div>
+                        <h1 class="welcome">Welcome Back</h1>
+                        <h4>Login into your Account</h4>
                     </div>
-                    <h1 class="welcome">Welcome Back</h1>
-                    <h4>Login into your Account</h4>
+
+                    <form class="form">
+
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Username">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <div class="login align">
+                            <a class="d-flex btn-login btn-primary justify-content-center align-items-center"
+                                href="dashboard.html"> Login </a>
+                            <p><a href="#"> Forget Password ?</a></p>
+                        </div>
+                    </form>
+
+                    <div class="signup">
+                        <h6>Don’t have an account? <a href="#">SIGN UP</a></h6>
+                    </div>
                 </div>
-            
-                <form class="form">
-
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Username">
-                        <label for="floatingInput">Username</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-
-                    <div class="login align">
-                        <a class="d-flex btn-login btn-primary justify-content-center align-items-center" href="dashboard.html"> Login </a>
-                        <p><a href="#"> Forget Password ?</a></p>
-                    </div>
-                </form>
-
-                <div class="signup"><h6>Don’t have an account? <a href="#">SIGN UP</a></h6>
-                </div>
+                <img src="./images/downward-coin.svg" alt="dollar coin" class="downward-coin">
             </div>
-            <img src="./images/downward-coin.svg" alt="dollar coin" class="downward-coin">
         </div>
-        </div>
-	
-	<!-- JavaScripts -->
-	<script src="js/main.js"></script>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

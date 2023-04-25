@@ -27,10 +27,9 @@
       <form class="form-search d-flex " role="search">
         <input class="form-control d-sm-block d-none" id="search" type="search" placeholder="Search"
           aria-label="Search">
-        <button class="search-btn d-block d-sm-none" data-bs-target="#search" aria-controls="search"><img
-            src="./images/search.svg" alt="search"> </button>
       </form>
-      <!-- <button class="btn btn-search" type="button"><img src="images/bx_bx-search.svg"></button> -->
+      <button type="button" class="btn btn-close-search d-sm-none d-block"><img src="./images/close-icon.svg" alt="close"></button>
+      <button class="btn btn-search" type="button"><img src="./images/search.svg"></button>
 
       <button class="btn-buy btn " type="submit">Buy Bitcoins</button>
 
@@ -171,7 +170,7 @@
             </div>
             <div class=" col-md-6">
               <div class="form-floating ">
-                <input type="text" class="form-control " id="underlinedashed" value="@johndoe" placeholder="Username">
+                <input type="text" class="form-control " id="underlinedashed" value="@johndoe" placeholder="Username" disabled>
                 <label for="underlinedashed">Username</label>
               </div>
             </div>
@@ -245,8 +244,7 @@
             </div>
             <div class=" col-md-3">
               <div class="form-floating ">
-                <input type="text" class="form-control border-bottom-dasher" id="dashed" value="@johndoe"
-                  placeholder="Username">
+                <input type="text" class="form-control border-bottom-dasher" id="dashed" value="@johndoe" disabled placeholder="Username">
                 <label for="dashed">Username</label>
               </div>
             </div>
